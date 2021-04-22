@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Jim Wilson">
+<meta name="description" content="Code for Week 1 for JIm Wilson portfolio">
+<title>Week 1 Code</title>
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Prompt&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="css/small.css">
+<link rel="stylesheet" href="css/medium.css">
+<link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <main>
+        <h1>Week 1 Code</h1>
+        <p>main.js as of 202104211040 CST</p>
+        <p>/* Obtain Dynamic Table of Contents */
+            const link_listURL = 'json/link_list.json'
+            fetch(link_listURL)
+                .then(function (response) {
+                    return response.json();
+
+                })
+                .then(function (jsonObject) {
+                    const link_list = jsonObject['link_list'];
+                    link_list.forEach(item => {
+                        const menu_link = document.createElement("li");
+                        const link_list = document.querySelector("#link_list");
+                        menu_link.innerHTML = `<a href="${item.url}">  ${item.label}</a>`;
+                        link_list.append(menu_link);
+
+                    })
+                })</p>
+        <p>Using this json file as the source of the data for the dynamic menu.</p>
+        <p>{
+                "link_list": [
+                    {
+                        "label": "Week1 Notes",
+                        "url": "w1notes.html"
+                    },
+                    {
+                        "label": "Week1 Questions and Answers",
+                        "url": "w1q&a.html"
+                    },
+                    {
+                        "label": "Week1 Code Samples",
+                        "url": "w1code.html"
+                    }
+
+                ]
+            }</p>
+    </main>
+</body>
+
+</html>
