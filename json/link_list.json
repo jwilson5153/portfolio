@@ -10,7 +10,20 @@
     {
         "label":"Week1 Code Samples",
         "url":"w1code.html"
+    },
+    {
+        "label":"Week2 Notes",
+        "url":"w2notes.html"
+    },
+    {
+        "label":"Week2 Questions and Answers",
+        "url":"w2q&a.html"
+    },
+    {
+        "label":"Week2 Code Samples",
+        "url":"w2code.html"
     }
+
 
 ]
 }
