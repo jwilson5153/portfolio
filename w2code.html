@@ -20,8 +20,61 @@
 <body>
     <main>
         <h1>Week 2 Code</h1>
+        <p>This is from the team meeting.</p>
+        <pre><code>
+            &lt;head>
+            &lt;script>
+                function add() {
+                    const input = document.getElementById("numbers").value;
 
+                    document.getElementById("results").innerHTML = input;
+
+                };
+
+                function stepByNumber() {
+                    var input = document.getElementById("numbers").value;
+                    input = parseInt(input);
+                    if (typeof input == "number") {
+                        let total = 0;
+                        for (let i = 0; i <= input; i++) {
+                            total += i;
+                        }
+                        document.getElementById("results").innerHTML = total;
+                    }
+                    else {
+                        document.getElementById("results").innerHTML = "Not a Number!";
+                    }
+                };
+
+                function addAgain() {
+                    var number1 = document.getElementById("numbers").value;
+                    var number2 = document.getElementById("numberTwo").value;
+                    number1 = parseInt(number1);
+                    number2 = parseInt(number2);
+                    var answer = (number1 + number2);
+                    document.getElementById("results").innerHTML = answer;
+                };
+
+                &lt;/script>
+    
+                &lt;/head>
+                &lt;body>
+                &lt;div id="control">
+                &lt;input type="text" id="numbers"> &lt;br>&lt;br>
+                &lt;input type="text" id="numberTwo">&lt;br>&lt;br>
+                &lt;input type="button" value="Step 1" onclick='stepByNumber()'>
+                &lt;br>&lt;br>
+                &lt;input type="button" value="+" onclick="addAgain()"><br><br>
+    
+                &lt;/div>
+                &lt;div id="results">
+    
+                &lt;/div>
+    
+                &lt;/body>
+</code></pre>
     </main>
+    <a href="/portfolio">Main Menu</a>
 </body>
 
 </html>
