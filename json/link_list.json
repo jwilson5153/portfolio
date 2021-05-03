@@ -22,8 +22,19 @@
     {
         "label":"Week2 Code Samples",
         "url":"w2code.html"
+    },
+    {
+        "label":"Week3 Notes",
+        "url":"w3notes.html"
+    },
+    {
+        "label":"Week3 Questions and Answers",
+        "url":"w3q&a.html"
+    },
+    {
+        "label":"Week3 Code Samples",
+        "url":"w3code.html"
     }
-
 
 ]
 }
