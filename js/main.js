@@ -15,7 +15,7 @@ fetch(link_listURL)
 
         })
     })
-    /* Notes */
+    /* Notes 
     function loadWeekNotes() {
         var notes = document.getElementById('week').value;
         var notesHTML = localStorage.getItem(notes);
@@ -31,7 +31,7 @@ fetch(link_listURL)
         var notesHTML = document.getElementById('notes_editor').value;
         document.getElementById('notes_display').innerHTML = notesHTML;
     }  
-    /* QA */
+    /* QA 
     function loadWeekQA() {
         var qa = document.getElementById('week').value;
         var qaHTML = localStorage.getItem(qa);
@@ -47,7 +47,7 @@ fetch(link_listURL)
         var qaHTML = document.getElementById('qa_editor').value;
         document.getElementById('qa_display').innerHTML = qaHTML;
     }   
-    /* Code */   
+    /* Code *  
     function loadWeekCode() {
         var code = document.getElementById('week').value;
         var codeHTML = localStorage.getItem(code);
@@ -62,4 +62,4 @@ fetch(link_listURL)
     function displayWeekCode() {
         var codeHTML = document.getElementById('code_editor').value;
         document.getElementById('code_display').innerHTML = codeHTML;
-    }   
+    }   */
