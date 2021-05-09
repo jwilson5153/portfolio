@@ -2,27 +2,28 @@
 <html lang="en-us">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Jim Wilson">
-    <meta name="description" content="Code for Week 3 for JIm Wilson portfolio">
-    <title>Week 3 Code</title>
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Prompt&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/small.css">
-    <link rel="stylesheet" href="css/medium.css">
-    <link rel="stylesheet" href="css/large.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Jim Wilson">
+  <meta name="description" content="Code for Week 3 for JIm Wilson portfolio">
+  <title>Week 3 Code</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Prompt&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
 </head>
 
 <body>
-    <main>
-        <h1>Week 3 Code</h1>
-        <p>I had prrepped by having the start files for the stretch tasks as well.</p>
-        <pre><code>
-            // Get your shorts on - this is an array workout!
+  <main>
+    <h1>Week 3 Code</h1>
+    <p>I had prrepped by having the start files for the stretch tasks as well.</p>
+    <pre><code>
+          <h2>Code for Group work</h2>
+          // Get your shorts on - this is an array workout!
             // ## Array Cardio Day 1
             // Some data we can work with
             const inventors = [
@@ -154,9 +155,70 @@
             // Array.prototype.findIndex()
             // Find the comment with this ID
             // delete the comment with the ID of 823423
+<h2>Code for practice of the reading</h2>
+<p>Script in the htnl file</p>
+const clickParagraph = document.getElementById('click');
+        clickParagraph.addEventListener('click', () => console.log('click'));
+        clickParagraph.addEventListener('mousedown', () => console.log('down'));
+        clickParagraph.addEventListener('mouseup', () => console.log('up'));
+
+        const dblclickParagraph = document.getElementById('dblclick');
+        dblclickParagraph.addEventListener('dblclick', highlight);
+
+        function highlight(event) {
+            event.target.classList.toggle('highlight');
+        }
+        function changeColor(newColor) {
+            var elem = document.getElementById('para');
+            console.log(elem);
+            elem.style.color = newColor;
+        }
+        const mouseParagraph = document.getElementById('mouse');
+        mouseParagraph.addEventListener('mouseover', highlight);
+        mouseParagraph.addEventListener('mouseout', highlight);
+        mouseParagraph.addEventListener('mousemove', () => console.log('You Moved!'));
+        addEventListener('keydown', highlight);
+        addEventListener('keyup', (event) => console.log(`You stopped pressing the key on ${new Date}`));
+        addEventListener('keypress', (event) => console.log(`You pressed the ${event.key} character`));
+        addEventListener('keydown', (event) => console.log(`You pressed the ${event.key} character`));
+        addEventListener('keydown', (event) => {
+            if (event.key === 'c' && event.ctrlKey) {
+                console.log('Action canceled!');
+            }
+        });
+        addEventListener('click', (event) => {
+            if (event.shiftKey) {
+                console.log('A Shifty Click!');
+            }
+        });
+
+        ulElement = document.getElementById('list');
+        liElement = document.querySelector('#list li');
+        // capturing
+        ulElement.addEventListener('click', (event) =>
+            console.log('Clicked on ul'), true);
+        liElement.addEventListener('click', (event) =>
+            console.log('Clicked on li'), true);
+        // bubbling
+        ulElement.addEventListener('click', (event) =>
+            console.log('Clicked on ul'), false);
+        liElement.addEventListener('click', (event) =>
+            console.log('Clicked on li'), false);
+        ulElement.addEventListener('click', highlight);
+    <p>js file</p>
+    const clickParagraph = document.getElementById('click');
+clickParagraph.addEventListener('click', () => console.log('click'));
+clickParagraph.addEventListener('mousedown', () => console.log('down'));
+clickParagraph.addEventListener('mouseup', () => console.log('up'));
+
+function changeColor(newColor) {
+  var elem = document.getElementById('para');
+  console.log(elem);
+  elem.style.color = newColor;
+
 </code></pre>
-    </main>
-    <a href="/portfolio">Main Menu</a>
+  </main>
+  <a href="/portfolio">Main Menu</a>
 </body>
 
 </html>
