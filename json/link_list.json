@@ -46,7 +46,10 @@
     {
         "label":"Week4 Code Samples",
         "url":"w4code.html"
-    }
+    },
+    { "label":"Week4 Team Activity",
+    "url":"w4team.html"
+}
 
 ]
 }
