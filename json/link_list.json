@@ -35,21 +35,26 @@
         "label":"Week3 Code Samples",
         "url":"w3code.html"
     },
-    {
-        "label":"Week4 Notes",
-        "url":"w4notes.html"
-    },
-    {
-        "label":"Week4 Questions and Answers",
-        "url":"w4q&a.html"
-    },
-    {
-        "label":"Week4 Code Samples",
-        "url":"w4code.html"
-    },
-    { "label":"Week4 Team Activity",
-    "url":"w4team.html"
-}
+  
+    {         
+                "label":"Week4 Notes",
+                "url":"w4notes.html"
+            },
+            { 
+                "label":"Questions and Answers",
+                "url":"w4q&a.html"
+            },
+            {
+                "label":"Week4 Code Samples",
+                "url":"w4code.html"
+            },
+            { 
+                "label":"Week4 Team Activity",
+                "url":"w4_team_act.html"
+        }
+   
+
+
 
 ]
 }

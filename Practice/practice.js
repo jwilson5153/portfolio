@@ -7,3 +7,12 @@ const clickParagraph = document.getElementById('click');
    console.log(elem);
    elem.style.color = newColor;
  }
+ const myObj = Object.assign({
+  name: "Hello"
+}, {
+  name: "World"
+}, {
+  name: "!"
+});
+const result = myObj.name;
+console.log(result);
